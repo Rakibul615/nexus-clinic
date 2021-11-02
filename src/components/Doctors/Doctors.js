@@ -8,17 +8,13 @@ const Doctors = () => {
         setDoctor(fakeData);
     }, [])
     return (
-        <div className="container">
-            <div className="row row-cols-4">
-                {
-                    doctor.map(doctor => <Doctor
-                        const key={doctor.id}
-                        doctor={doctor}
-
-                    ></Doctor>)
-                }
-
-            </div>
+        <div>
+            {
+                doctor.map(doctor => <Doctor
+                    const key={doctor.id}
+                    doctor={doctor}
+                ></Doctor>)
+            }
 
         </div>
     );

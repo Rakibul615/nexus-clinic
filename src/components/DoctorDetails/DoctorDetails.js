@@ -10,12 +10,12 @@ const DoctorDetails = () => {
   const { key } = useParams();
   // const result = fakeData.find(doctor=>doctor.id===key) find function is not working
   const doctor = {
-    id:    doctorDetail[key - 1].id,
+    id: doctorDetail[key - 1].id,
     title: doctorDetail[key - 1].title,
-    name:  doctorDetail[key - 1].name,
-    img:   doctorDetail[key - 1].docImg,
-    time:  doctorDetail[key - 1].time,
-    fee:   doctorDetail[key - 1].fee,
+    name: doctorDetail[key - 1].name,
+    img: doctorDetail[key - 1].docImg,
+    time: doctorDetail[key - 1].time,
+    fee: doctorDetail[key - 1].fee,
   }
   const { img, name, title, time, fee } = doctor;
 

@@ -5,14 +5,17 @@ const Doctor = (props) => {
   const { id, name, title, docImg } = props.doctor;
 
   return (
-    <div className="card" >
-      <img src={docImg} className="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 className="card-title">{name}</h5>
-        <p className="card-text">{title}</p>
-        <Link to={`/doctorDetail/${id}`}>
-          <button type="button" class="btn btn-warning"> Profile</button>
-        </Link>
+
+    <div className="col">
+      <div class="card">
+        <img src={docImg} class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{name}</h5>
+          <p className="card-text">{title}</p>
+          <Link to={`/doctorDetail/${id}`}>
+            <button type="button" class="btn btn-warning"> Profile</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

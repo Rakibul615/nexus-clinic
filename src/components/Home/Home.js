@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import fakeData from '../../fakeData/fakeData.json';
+
 import Doctor from '../Doctor/Doctor';
 import Service from '../Service/Service';
 import './Home.css';
@@ -12,8 +13,12 @@ const Home = () => {
 
     return (
         <div>
+            <div className="mt-3">
+                <h1>Find a Doctor</h1>
+            </div>
             <div className="container">
-                <div className="row row-cols-4">
+                <div className=" services-container  p-3 mb-5 bg-body ">
+                <div className=" service-container row   p-1 row-cols-1 row-cols-md-3 g-4">
                     {
                         services.map(doctor => <Doctor
                             const key={doctor.id}
@@ -21,11 +26,15 @@ const Home = () => {
                         ></Doctor>)
                     }
                 </div>
+                </div>
 
             </div>
-            <div className=" services-container border border-2 m-2 shadow-lg p-3 mb-5 bg-body rounded">
+            <div className=" p-2">
+                <h1>Our Services</h1>
+            </div>
+            <div className=" services-container  p-3 mb-5 bg-body rounded">
 
-                <div class=" service-container row  m-3 p-3 row-cols-1 row-cols-md-3 g-4">
+                <div class=" service-container row   p-1 row-cols-1 row-cols-md-3 g-4">
                     {
                         services.map(service => <Service
                             const key={service.id}
@@ -33,6 +42,11 @@ const Home = () => {
                         ></Service>)
                     }
                 </div>
+            </div>
+
+            <div id="covid-service" className="img-fluid">
+                
+               
             </div>
         </div>
 

@@ -1,0 +1,8 @@
+#covid-service{
+    background-image: url('../../images/covid.jpg');
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    background-size: auto;
+    background-position: center ;
+}
